@@ -28,7 +28,7 @@ export class UInt32 {
         return v >>> 0;
     }
 
-    public static clamp(value: u32, min: u32, max: u32) {
+    public static clamp(value: u32, min: u32, max: u32): u32 {
         value >>>= 0;
         min >>>= 0;
         max >>>= 0;
@@ -56,8 +56,8 @@ export class UInt32 {
             return "0x" + value.toString(16);
     }
 
-    public static readonly min = 0x00000000;
-    public static readonly max = 0xffffffff;
+    public static readonly min: u32 = 0x00000000;
+    public static readonly max: u32 = 0xffffffff;
     public static readonly bitWidth = 32;
     public static readonly isSigned = false;
 }

@@ -28,15 +28,15 @@ export class Int32 {
         return v | 0;
     }
 
-    public static clamp(value: i32, min: i32, max: i32) {
+    public static clamp(value: i32, min: i32, max: i32): i32 {
         value |= 0;
         min |= 0;
         max |= 0;
         return value < min ? min : (value > max ? max : value);
     }
 
-    public static readonly min = -2147483648;
-    public static readonly max = 2147483647;
+    public static readonly min: i32 = -2147483648;
+    public static readonly max: i32 = 2147483647;
     public static readonly bitWidth = 32;
     public static readonly isSigned = true;
 }

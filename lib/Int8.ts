@@ -30,15 +30,15 @@ export class Int8 {
         return v << 24 >> 24;
     }
 
-    public static clamp(value: i8, min: i8, max: i8) {
+    public static clamp(value: i8, min: i8, max: i8): i8 {
         value = fromNumber(value);
         min = fromNumber(min);
         max = fromNumber(max);
         return value < min ? min : (value > max ? max : value);
     }
 
-    public static readonly min = -128;
-    public static readonly max = 127;
+    public static readonly min: i8 = -128;
+    public static readonly max: i8 = 127;
     public static readonly bitWidth = 8;
     public static readonly isSigned = true;
 }

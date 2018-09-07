@@ -1,6 +1,6 @@
 {
   "name": "js-integer-math",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JavaScript Integer Math (Int8, Int16, Int32, UInt8, UInt16, UInt32, UInt64)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

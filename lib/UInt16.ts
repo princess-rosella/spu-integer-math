@@ -26,7 +26,7 @@ export class UInt16 {
         return v & 0xffff;
     }
 
-    public static clamp(value: u16, min: u16, max: u16) {
+    public static clamp(value: u16, min: u16, max: u16): u16 {
         value &= 0xffff;
         min &= 0xffff;
         max &= 0xffff;
@@ -46,8 +46,8 @@ export class UInt16 {
             return "0x" + value.toString(16);
     }
 
-    public static readonly min = 0x0000;
-    public static readonly max = 0xffff;
+    public static readonly min: u16 = 0x0000;
+    public static readonly max: u16 = 0xffff;
     public static readonly bitWidth = 16;
     public static readonly isSigned = false;
 }
