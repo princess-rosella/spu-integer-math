@@ -1,3 +1,5 @@
 tests
 tests.out
+tests.tsconfig.json
 lib
+lib.tsconfig.json

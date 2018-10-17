@@ -1,24 +1,24 @@
 {
-  "name": "js-integer-math",
+  "name": "spu-integer-math",
   "version": "0.0.3",
   "description": "JavaScript Integer Math (Int8, Int16, Int32, UInt8, UInt16, UInt32, UInt64)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p lib.tsconfig.json",
+    "prepare": "tsc -p lib.tsconfig.json",
     "test": "tsc -p tests.tsconfig.json && node tests.out/tests/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/princess-rosella/js-integer-math.git"
+    "url": "git+https://github.com/princess-rosella/spu-integer-math.git"
   },
   "author": "Princess Rosella of Daventry <princess.rosella.of.daventry@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/princess-rosella/js-integer-math/issues"
+    "url": "https://github.com/princess-rosella/spu-integer-math/issues"
   },
-  "homepage": "https://github.com/princess-rosella/js-integer-math#readme",
+  "homepage": "https://github.com/princess-rosella/spu-integer-math#readme",
   "devDependencies": {
-    "typescript": "^3.0.3"
+    "typescript": "^3.1.0"
   }
 }
